@@ -1,7 +1,7 @@
 # Functionality of this fork was merged into the main project.
 
 **Please use the main repository
-[walokra/markdown-page-generator-plugin](https://github.com/walokra/markdown-page-generator-plugin)** 
+[walokra/markdown-page-generator-plugin]** 
 
 # Markdown to HTML Page Generator Maven Plugin
 
@@ -437,3 +437,4 @@ Input- and Output-Encoding can be specified by:
 [PHP Markdown Extra: definition list]: http://michelf.com/projects/php-markdown/extra/#def-list
 [PHP Markdown Extra: fenced code]: http://michelf.com/projects/php-markdown/extra/#fenced-code-blocks
 [PHP Markdown Extra: tables]: http://michelf.com/projects/php-markdown/extra/#table
+[walokra/markdown-page-generator-plugin]: https://github.com/walokra/markdown-page-generator-plugin
