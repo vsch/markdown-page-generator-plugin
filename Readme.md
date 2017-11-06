@@ -11,22 +11,19 @@ processor. The code is Open Source and under MIT license.
 This plugin is a fork of [walokra/markdown-page-generator-plugin] and replaces [pegdown]
 markdown processor with [flexmark-java] processor.
 
-<!-- 
-[![Build status](https://travis-ci.org/vsch/markdown-page-generator-plugin.svg?branch=master)](https://travis-ci.org/vsch/markdown-page-generator-plugin)
-[![Maven Central status](https://img.shields.io/maven-central/v/com.vladsch.flexmark/markdown-page-generator-plugin.svg)](https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.vladsch.flexmark%22%20AND%20a%3A%22markdown-page-generator-plugin%22)
- -->
+[![Build Status](https://travis-ci.org/walokra/markdown-page-generator-plugin.svg?branch=master)](https://travis-ci.org/walokra/markdown-page-generator-plugin)
+
+[![Maven Central status](https://img.shields.io/maven-central/v/com.ruleoftech/markdown-page-generator-plugin.svg)](https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.ruleoftech%22%20AND%20a%3A%22markdown-page-generator-plugin%22)
 
 Plugin Information:
 
-<!-- 
 ```xml
 <plugin>
-    <groupId>com.vladsch.flexmark</groupId>
+    <groupId>com.ruleoftech</groupId>
     <artifactId>markdown-page-generator-plugin</artifactId>
-    <version>0.22.14</version>
+    <version>1.0.0</version>
 </plugin>
 ```
- -->
 
 You can configure the input and output directories, which files to copy and which pegdown
 options are used. You can also include custom header and footer and general title.
@@ -335,8 +332,6 @@ Configuration options:
 * outputEncoding: Charset-Name used for writing the html-output, default:
   `${project.build.sourceEncoding}` or `Default-Charset`
 
-* `parsingTimeoutInMillis`: is not used. [flexmark-java] does not have parsing timing issues.
-
 The output will be:
 
 * `target/html/name_of_file.html`
@@ -349,9 +344,9 @@ Add the plugin to the pom file in your project:
 <build>
     <plugins>
         <plugin>
-            <groupId>com.vladsch.flexmark</groupId>
+            <groupId>com.ruleoftech</groupId>
             <artifactId>markdown-page-generator-plugin</artifactId>
-            <version>0.22.14</version>
+            <version>1.0.0</version>
             <executions>
                 <execution>
                     <phase>process-resources</phase>
@@ -367,11 +362,11 @@ Add the plugin to the pom file in your project:
 
 Or with custom header and footer:
 
-```html
+```xml
 <plugin>
-    <groupId>com.vladsch.flexmark</groupId>
+    <groupId>com.ruleoftech</groupId>
     <artifactId>markdown-page-generator-plugin</artifactId>
-    <version>0.22.14</version>
+    <version>1.0.0</version>
     <executions>
         <execution>
             <phase>process-resources</phase>
@@ -388,13 +383,13 @@ Or with custom header and footer:
 </plugin>
 ```
 
-You can also specify the Pegdown extensions:
+You can also specify the Pegdown extensions:  
 
-```html
+```xml
 <plugin>
-    <groupId>com.vladsch.flexmark</groupId>
+    <groupId>com.ruleoftech</groupId>
     <artifactId>markdown-page-generator-plugin</artifactId>
-    <version>0.22.14</version>
+    <version>1.0.0</version>
     <executions>
         <execution>
             <phase>process-resources</phase>
@@ -411,14 +406,14 @@ You can also specify the Pegdown extensions:
 
 Input- and Output-Encoding can be specified by:
 
-```html
+```xml
 <plugin>
-    <groupId>com.vladsch.flexmark</groupId>
+    <groupId>com.ruleoftech</groupId>
     <artifactId>markdown-page-generator-plugin</artifactId>
-    <version>0.22.14</version>
+    <version>1.0.0</version>
     <executions>
         <execution>
-            <phase>process-test-resources</phase>
+            <phase>process-resources</phase>
             <goals>
                 <goal>generate</goal>
             </goals>
@@ -442,5 +437,3 @@ Input- and Output-Encoding can be specified by:
 [PHP Markdown Extra: definition list]: http://michelf.com/projects/php-markdown/extra/#def-list
 [PHP Markdown Extra: fenced code]: http://michelf.com/projects/php-markdown/extra/#fenced-code-blocks
 [PHP Markdown Extra: tables]: http://michelf.com/projects/php-markdown/extra/#table
-[walokra/markdown-page-generator-plugin]: https://github.com/walokra/markdown-page-generator-plugin
-
