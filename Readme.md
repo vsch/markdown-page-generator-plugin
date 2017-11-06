@@ -1,3 +1,8 @@
+# Functionality of this fork was merged into the main project.
+
+**Please use the main repository
+[walokra/markdown-page-generator-plugin](https://github.com/walokra/markdown-page-generator-plugin)** 
+
 # Markdown to HTML Page Generator Maven Plugin
 
 Plugin creates static HTML pages with Maven and Markdown. Uses [flexmark-java] Markdown
@@ -6,11 +11,14 @@ processor. The code is Open Source and under MIT license.
 This plugin is a fork of [walokra/markdown-page-generator-plugin] and replaces [pegdown]
 markdown processor with [flexmark-java] processor.
 
+<!-- 
 [![Build status](https://travis-ci.org/vsch/markdown-page-generator-plugin.svg?branch=master)](https://travis-ci.org/vsch/markdown-page-generator-plugin)
 [![Maven Central status](https://img.shields.io/maven-central/v/com.vladsch.flexmark/markdown-page-generator-plugin.svg)](https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.vladsch.flexmark%22%20AND%20a%3A%22markdown-page-generator-plugin%22)
+ -->
 
 Plugin Information:
 
+<!-- 
 ```xml
 <plugin>
     <groupId>com.vladsch.flexmark</groupId>
@@ -18,6 +26,7 @@ Plugin Information:
     <version>0.22.14</version>
 </plugin>
 ```
+ -->
 
 You can configure the input and output directories, which files to copy and which pegdown
 options are used. You can also include custom header and footer and general title.
